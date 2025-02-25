@@ -21,6 +21,9 @@ main {
 .section-hero {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .hero-nav {
@@ -83,25 +86,126 @@ main {
   border-radius: 1rem;
 }
 
+/*---------------------------*/
+/*------MAIN-CONTENT---------*/
+/*---------------------------*/
+
+.hero-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.hero-main-texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 65rem;
+  padding: 1.5rem;
+}
+
+.hero-main-texts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.hero-main-texts-title {
+  display: flex;
+  flex-direction: column;
+  color: hsl(205, 100%, 17%);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/*---------------------------*/
+/*---------------------------*/
+
+.hero-container-subtitle {
+  max-width: 60ch;
+}
+
+.hero-main-texts-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-button-intro,
+.hero-button-now {
+  border: 1px solid hsl(205, 100%, 17%);
+  width: 140px;
+  outline: none;
+  padding: .8rem;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 1.6rem;
+}
+
+.hero-button-intro {
+  color: hsl(205, 100%, 17%);
+  background-color: hsl(40, 95%, 92%);
+}
+
+.hero-button-now {
+  color: white;
+  background-color: hsl(205, 100%, 17%);
+}
+
+/*---------------------------*/
+/*-----CONTAINER-IMGS--------*/
+/*---------------------------*/
 
 .hero-main-imgs {
   display: flex;
   position: relative;
+  flex: 1;
+  background-color: aqua;
 }
 
 .box-blue,
 .box-cream {
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   border-radius: 5rem;
   position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .box-blue {
   background-color: hsl(205, 100%, 17%);
+  right: 10px;
+  rotate: 10deg;
 }
 
 .box-cream {
   background-color: hsl(40, 82%, 81%);
-  rotate: 20deg;
+  right: -50PX;
+  rotate: 35deg;
+}
+
+.box-cream-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-cream-container img {
+  height: auto;
 }
